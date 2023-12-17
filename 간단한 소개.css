@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+h2 {
+  margin-bottom: 10px;
+  font-family: "Cafe24Ssurround";
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(37, 37, 37);
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 95%;
+  display: flex;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px rgb(130, 130, 130); */
+}
+.text-box {
+  margin: 20px;
+}
+.left {
+  flex: 1;
+  background-color: rgb(234, 76, 76);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px 10px;
+}
+.imo {
+  font-size: 50px;
+}
+.right {
+  flex: 3;
+  background-color: #fdfdfd;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px 10px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "KCC-Ganpan";
+}
+a {
+  display: flex;
+  justify-content: center;
+  color: #16b836;
+}
+.menu a p {
+  font-size: 18px;
+}
+.menu a:hover {
+  cursor: pointer;
+}
+.right .menu a {
+  justify-content: left;
+}
