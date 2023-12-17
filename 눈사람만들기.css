@@ -1,0 +1,131 @@
+body{
+    width: 100%;
+    height: 1080px;
+
+}
+
+.character{
+    position: flex;
+    width: 640px;
+    height: 700px;
+    background-color: azure;
+    padding-top: 90px;
+}
+
+.uknow-head{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background-color: #00A0E8;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.uknow-face{
+    position: absolute;
+    top: 154px;
+    right: 65px;
+    transform: rotate(0.1turn);
+}
+
+.uknow-face__hair{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    margin: 0 auto;
+    border-bottom-right-radius: 70%;
+    bottom: 0;
+}
+
+.uknow-face__hair:before{
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    width: 170px;
+    height: 170px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    border-left: 5px solid black;
+  }
+
+  .uknow-face__hair:after{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 170px;
+    height: 170px;
+    content: '';
+    border-top: 5px solid black;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+   
+    background-color: white;
+  }
+
+/* 눈 1,2 */
+.uknow-eye-1{
+    position: absolute;
+    bottom: 60px;
+    left: -40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.uknow-eye-2{
+    position: absolute;
+    bottom: 160px;
+    right: 60px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/* 눈 1,2 */
+.uknow-blur-1{
+    position: absolute;
+    bottom: 140px;
+    left: 135px;
+    width: 80px;
+    height: 80px;
+    border-radius: 65% 40% 65% 40%;
+    background-color: rgb(218, 35, 145);
+}
+
+.uknow-blur-2{
+    position: absolute;
+    bottom: -30px;
+    right: 140px;
+    width: 80px;
+    height: 80px;
+    border-radius: 65% 40% 65% 40%;
+    background-color: rgb(218, 35, 145);
+}
+
+.uknow-norse{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 20px;
+    left: 20px;
+    transform: rotate(0.9turn);
+}
+
+
+.uknow-body{
+    width: 450px;
+    height: 450px;
+    background-color: #00A0E8;
+    margin: 0 auto;
+    border-radius: 100%;
+}
