@@ -1,0 +1,58 @@
+.chat_screen_texts{
+  padding: 0;
+  list-style-type: none;
+}
+
+.chat_screen_texts > .text{
+  background-color: white;
+  width: 280px;
+  height: 50px;
+  margin:0 0 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 30px;
+  position: relative;
+  left: 20px;
+  transition: width 2s, height 2s;
+}
+
+.chat_screen_texts > .text.me {
+  background-color: lightblue;
+  align-self: flex-end;
+}
+
+.chat_screen_texts > .text.me::after{
+  content: "";
+  border-left: 16px solid lightblue;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+}
+
+.chat_screen_texts > .text.you {
+  background-color: white;
+  align-self: flex-start;
+}
+
+.chat_screen_texts > .text.you::after{
+  content: "";
+  border-right: 16px solid white;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+
+.chat_screen_texts > .text:hover{
+  background-color: beige;
+  transition: background-color 1500ms 200ms ease-in;
+  width: 300px;
+  height: 70px;
+}
+
+.chat_screen_texts > .text:hover::after{
+  border-right: 16px solid beige;
+  transition: border-right 1500ms 200ms ease-in;
+}
+
