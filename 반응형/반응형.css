@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    background-color: red;
+
+}
+
+p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        background-color: rgb(158, 158, 251);
+    }
+
+    p {
+        font-size: 0px;
+    }
+
+    p::after {
+        font-size: 20px;
+        content: "반응1번";
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: rgb(172, 255, 172);
+    }
+
+    p::after {
+        font-size: 20px;
+        content: "반응2번";
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: rgb(255, 255, 187);
+    }
+
+    p::after {
+        font-size: 20px;
+        content: "반응3번";
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: rgb(255, 153, 153);
+    }
+
+    p::after {
+        font-size: 20px;
+        content: "반응4번";
+    }
+}
