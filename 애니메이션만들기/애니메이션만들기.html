@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>애니메이션 효과</title>
+    <style>
+        .eyes{
+            width: 640px;
+            margin: auto;
+        }
+        .eyes{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: relative;
+        }
+        .eye:nth-child(1){ float: left; }
+        .eye:nth-child(2){ float: right; }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+            top: 80px;
+            left: 30px;
+
+            animation-name: : moving;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+ /* animation: moving 2s os linear infinite alternate 로 적어도 가능 */
+ /* linear 이쪽부분은 바꿔적어도 문제 안됨. 숫자부분은 바꿔적으면 문제됨 */
+
+            .ball:hover{
+                animation-play-state: paused;
+            }
+
+            @keyframes moving {
+                from{ lefe: 30px;}
+                to{ lefe:120px; }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="eyes">
+        <div class="eye">
+           <div class="ball"></div>
+    </div>       
+    <div class="eye">
+        <div class="ball"></div>
+      </div>
+    </div>
+</body>
+</html>
